@@ -1,0 +1,481 @@
+{
+  "pollution": {
+    "clean": [
+      209.48,
+      210.15,
+      210.73,
+      212.78,
+      212.89,
+      213.13,
+      213.87,
+      215.12,
+      217.1,
+      219.57,
+      219.88,
+      229.06
+    ],
+    "after_p1": [
+      213.11,
+      804.0,
+      827.04,
+      836.73,
+      856.64,
+      857.86,
+      861.05,
+      861.6,
+      876.14,
+      931.9,
+      958.77,
+      980.07
+    ],
+    "clean_median": 213.87,
+    "after_p1_median": 861.05,
+    "slow_mode_count": 11,
+    "slow_mode_range": [
+      804.0,
+      980.07
+    ],
+    "unaffected_count": 1,
+    "ratio_when_slow": 3.7592930284752417,
+    "ratio_when_slow_max": 4.582550147285734
+  },
+  "arms": {
+    "P1": {
+      "refactor": {
+        "arm_x": "A",
+        "arm_y": "A2",
+        "ratio": 0.982,
+        "lo": 0.941,
+        "hi": 1.059
+      },
+      "swap": {
+        "arm_x": "A2",
+        "arm_y": "B",
+        "ratio": 0.999,
+        "lo": 0.953,
+        "hi": 1.036
+      },
+      "trim": {
+        "arm_x": "A2",
+        "arm_y": "C",
+        "ratio": 15652.645,
+        "lo": 14689.029,
+        "hi": 16384.608
+      },
+      "total": {
+        "arm_x": "A",
+        "arm_y": "D",
+        "ratio": 15958.301,
+        "lo": 14997.272,
+        "hi": 16957.255
+      }
+    },
+    "P2": {
+      "refactor": {
+        "arm_x": "A",
+        "arm_y": "A2",
+        "ratio": 1.019,
+        "lo": 0.961,
+        "hi": 1.027
+      },
+      "swap": {
+        "arm_x": "A2",
+        "arm_y": "B",
+        "ratio": 1.032,
+        "lo": 0.907,
+        "hi": 1.159
+      },
+      "trim": {
+        "arm_x": "A2",
+        "arm_y": "C",
+        "ratio": 1.0,
+        "lo": 0.957,
+        "hi": 1.06
+      },
+      "total": {
+        "arm_x": "A",
+        "arm_y": "D",
+        "ratio": 1.022,
+        "lo": 0.987,
+        "hi": 1.066
+      }
+    },
+    "P3": {
+      "refactor": {
+        "arm_x": "A",
+        "arm_y": "A2",
+        "ratio": 1.033,
+        "lo": 0.953,
+        "hi": 1.142
+      },
+      "swap": {
+        "arm_x": "A2",
+        "arm_y": "B",
+        "ratio": 0.966,
+        "lo": 0.937,
+        "hi": 1.02
+      },
+      "trim": {
+        "arm_x": "A2",
+        "arm_y": "C",
+        "ratio": 0.99,
+        "lo": 0.982,
+        "hi": 1.023
+      },
+      "total": {
+        "arm_x": "A",
+        "arm_y": "D",
+        "ratio": 1.013,
+        "lo": 0.86,
+        "hi": 1.049
+      }
+    }
+  },
+  "real": [
+    {
+      "id": "R1",
+      "label": "file path",
+      "note": "long shared prefix and suffix",
+      "ratio": 31.34,
+      "lo": 28.497,
+      "hi": 32.536
+    },
+    {
+      "id": "R2",
+      "label": "URL",
+      "note": "one digit differs",
+      "ratio": 107.29,
+      "lo": 103.041,
+      "hi": 113.454
+    },
+    {
+      "id": "R3",
+      "label": "english sentence",
+      "note": "one word differs",
+      "ratio": 79.105,
+      "lo": 64.755,
+      "hi": 88.837
+    },
+    {
+      "id": "R5",
+      "label": "english word pair",
+      "note": "implementation / documentation",
+      "ratio": 3.639,
+      "lo": 3.374,
+      "hi": 4.632
+    },
+    {
+      "id": "R6",
+      "label": "chinese, 3 chars",
+      "note": "one character differs",
+      "ratio": 2.604,
+      "lo": 2.407,
+      "hi": 3.003
+    },
+    {
+      "id": "R7",
+      "label": "chinese, 4 chars",
+      "note": "all four differ",
+      "ratio": 2.025,
+      "lo": 1.837,
+      "hi": 2.214
+    },
+    {
+      "id": "R8",
+      "label": "version string",
+      "note": "one patch level differs",
+      "ratio": 33.807,
+      "lo": 10.53,
+      "hi": 37.106
+    },
+    {
+      "id": "R10",
+      "label": "name + city row",
+      "note": "city differs",
+      "ratio": 8.545,
+      "lo": 7.267,
+      "hi": 8.887
+    },
+    {
+      "id": "T1",
+      "label": "log line",
+      "note": "similar",
+      "ratio": 1.591,
+      "lo": 1.395,
+      "hi": 1.657
+    },
+    {
+      "id": "T2",
+      "label": "log line",
+      "note": "dissimilar",
+      "ratio": 1.437,
+      "lo": 1.358,
+      "hi": 1.531
+    },
+    {
+      "id": "P3",
+      "label": "128x128",
+      "note": "no shared edges (control)",
+      "ratio": 1.013,
+      "lo": 0.989,
+      "hi": 1.04
+    }
+  ],
+  "cells": [
+    {
+      "label": "P1 4097 long edges",
+      "upstream_cells": 16785409,
+      "new_cells": 1,
+      "upstream_row": 4098,
+      "new_row": 2
+    },
+    {
+      "label": "P2 8000x24 long first",
+      "upstream_cells": 192000,
+      "new_cells": 192000,
+      "upstream_row": 8001,
+      "new_row": 25
+    },
+    {
+      "label": "P2r 24x8000 short first",
+      "upstream_cells": 192000,
+      "new_cells": 192000,
+      "upstream_row": 25,
+      "new_row": 25
+    },
+    {
+      "label": "P3 128x128",
+      "upstream_cells": 16384,
+      "new_cells": 16384,
+      "upstream_row": 129,
+      "new_row": 129
+    },
+    {
+      "label": "R1 file path",
+      "upstream_cells": 3780,
+      "new_cells": 70,
+      "upstream_row": 64,
+      "new_row": 8
+    },
+    {
+      "label": "R2 URL",
+      "upstream_cells": 3600,
+      "new_cells": 1,
+      "upstream_row": 61,
+      "new_row": 2
+    },
+    {
+      "label": "R3 english sentence",
+      "upstream_cells": 3969,
+      "new_cells": 9,
+      "upstream_row": 64,
+      "new_row": 4
+    },
+    {
+      "label": "R5 implementation/doc",
+      "upstream_cells": 182,
+      "new_cells": 20,
+      "upstream_row": 15,
+      "new_row": 5
+    },
+    {
+      "label": "R6 chinese 3 chars",
+      "upstream_cells": 16,
+      "new_cells": 1,
+      "upstream_row": 5,
+      "new_row": 2
+    },
+    {
+      "label": "R8 version string",
+      "upstream_cells": 729,
+      "new_cells": 1,
+      "upstream_row": 28,
+      "new_row": 2
+    },
+    {
+      "label": "T1 log line similar",
+      "upstream_cells": 6561,
+      "new_cells": 3364,
+      "upstream_row": 82,
+      "new_row": 59
+    },
+    {
+      "label": "T2 log line dissimilar",
+      "upstream_cells": 5832,
+      "new_cells": 3762,
+      "upstream_row": 82,
+      "new_row": 58
+    }
+  ],
+  "poison": {
+    "original": [
+      {
+        "id": 0,
+        "desc": "control: unmodified (must pass)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 1,
+        "desc": "直接返回 0",
+        "result": "caught: known ''/'abc' expected 3 got 0"
+      },
+      {
+        "id": 2,
+        "desc": "drop the end>start guard (suffix may cross the prefix)",
+        "result": "caught (crash): StringIndexOutOfBoundsException"
+      },
+      {
+        "id": 3,
+        "desc": "trim prefix only (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 4,
+        "desc": "swap condition <= becomes < (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 5,
+        "desc": "substitutionCost misses +1",
+        "result": "caught: known 'kitten'/'sitting' expected 3 got 1"
+      },
+      {
+        "id": 6,
+        "desc": "drop the length==0 early return (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 7,
+        "desc": "suffix guard end1>0 (allows overlap)",
+        "result": "caught (crash): StringIndexOutOfBoundsException"
+      },
+      {
+        "id": 8,
+        "desc": "insertion cost +1 becomes +0",
+        "result": "caught: symmetry failed"
+      },
+      {
+        "id": 9,
+        "desc": "prefix scan stops after one char (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 10,
+        "desc": "always swap (equivalent, memory only)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 11,
+        "desc": "row init skips last element (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 12,
+        "desc": "swap condition inverted (equivalent)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 13,
+        "desc": "return abs(len1-len2)",
+        "result": "caught: known 'kitten'/'sitting' expected 3 got 1"
+      },
+      {
+        "id": 14,
+        "desc": "suffix trims end1 only",
+        "result": "caught: known 'prefix-X-suffix'/'prefix-Y-suffix' expected 1 got 2"
+      },
+      {
+        "id": 15,
+        "desc": "empty middle returns 0",
+        "result": "caught: known ''/'abc' expected 3 got 0"
+      },
+      {
+        "id": 16,
+        "desc": "start1++ but start2 frozen",
+        "result": "caught: known 'same'/'same' expected 0 got 1"
+      },
+      {
+        "id": 17,
+        "desc": "only length1==0 is checked",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 18,
+        "desc": "row[0] = j written as row[0]++",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 19,
+        "desc": "* trim removed entirely (optimisation gone, result correct)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 20,
+        "desc": "* swap removed (memory goal gone, result correct)",
+        "result": "MISSED (suite green)"
+      }
+    ],
+    "fixed": [
+      {
+        "id": 0,
+        "desc": "control: fixed version as-is (must pass)",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 1,
+        "desc": "* trim removed, short-first kept",
+        "result": "caught: structural ranges [0, 4097, 0, 4097] != [2048, 2049, 2048, 2049]"
+      },
+      {
+        "id": 2,
+        "desc": "* short-first removed, row follows arg1",
+        "result": "caught: row length long-first"
+      },
+      {
+        "id": 3,
+        "desc": "* both removed (= upstream original)",
+        "result": "caught: structural ranges [0, 4097, 0, 4097] != [2048, 2049, 2048, 2049]"
+      },
+      {
+        "id": 4,
+        "desc": "start1++ but start2 frozen",
+        "result": "caught: known 0 got 1"
+      },
+      {
+        "id": 5,
+        "desc": "suffix trims end1 only",
+        "result": "caught: known 1 got 2"
+      },
+      {
+        "id": 6,
+        "desc": "drop the end>start guard (crashes)",
+        "result": "caught (crash): StringIndexOutOfBoundsException"
+      },
+      {
+        "id": 7,
+        "desc": "return 0",
+        "result": "caught: known 3 got 0"
+      },
+      {
+        "id": 8,
+        "desc": "insertion cost +1 becomes +0",
+        "result": "caught: symmetry"
+      },
+      {
+        "id": 9,
+        "desc": "substitutionCost misses +1",
+        "result": "caught: known 3 got 1"
+      },
+      {
+        "id": 10,
+        "desc": "row[0] = j written as row[0]++",
+        "result": "MISSED (suite green)"
+      },
+      {
+        "id": 11,
+        "desc": "only string1.isEmpty is checked",
+        "result": "MISSED (suite green)"
+      }
+    ]
+  }
+}
